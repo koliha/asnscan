@@ -27,8 +27,8 @@
  Default and custom <SCANTYPES> are set in the asnworker.py file.  You should
  open and edit this file to suit your needs.  The default nmap scan will work
  for most (provided you can sudo), but the curl scan will definately require 
- customization to fit your needs. You can add custom scan types or even use
- this for payload delivery in addition to scanning.
+ customization to fit your needs. You can add your own custom scan types or 
+ even use this for payload delivery in addition to (or instead of) scanning.
  
 
  <SCANTYPE> options
