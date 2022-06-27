@@ -115,7 +115,7 @@ function do_scan {
 	cd $asn/temp
 	rm -rf ./*
 	sptemp=$(echo "$listlength / $threadcount" | $bcpath)
-	splitcount=$(echo "$sptemp + 1" | $bcpath)
+	splitcount=$(printf "%.0f" $sptemp)
 	$sppath -d -a 4 -l $splitcount ../$asn-iplist.txt ""
 	cd ../..
 	echo ""
