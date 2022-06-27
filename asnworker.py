@@ -44,6 +44,7 @@ if scantype == 'curl':
 				test = (os.popen(command).read())
 				if test != "":
 					print("%s"%(x))
+	os.remove(ipfile)
 	exit()
 
 # CIDR Aware SCANTYPE Example (nmap)
@@ -57,6 +58,7 @@ if scantype == 'nmap':
                         print("Scanning %s"%(line.strip()))
                         command = "nmap -sS -sV -O %s"%(x)
                         os.popen(command).read()
+		os.remove(ipfile)
         exit()
 
 
