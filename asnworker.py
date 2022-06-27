@@ -58,8 +58,8 @@ if scantype == 'nmap':
                         print("Scanning %s"%(line.strip()))
                         command = "nmap -sS -sV -O %s"%(x)
                         os.popen(command).read()
-		os.remove(ipfile)
-		exit()
+        os.remove(ipfile)
+        exit()
 
 
 ########################################################################

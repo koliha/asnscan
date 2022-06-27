@@ -109,7 +109,7 @@ fi
 
 # functions
 function do_scan {
-	echo "Please enter the number of threads to use (min/reccomended/max: 1/100/10000):"
+	echo "Please enter the number of threads to use (max: 10000):"
 	read threadcount
 	mkdir $asn/temp > /dev/null 2>&1
 	cd $asn/temp
@@ -165,7 +165,7 @@ function do_scan {
 		fi
 		sleep $psleep
 	done
-  sdate=$($dapath)
+ 	sdate=$($dapath)
 	echo ""
 	echo Scan completed on: $sdate
 }
